@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Que: 3</title>
+<script src="Que3.js"></script>
+</head>
+<body>
+
+<h1>Que: 3</h1>
+<p>
+<pre>
+function wearPPE() {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve('Wearing PPE'), 2000);
+    })
+}
+
+function fightCorona() {
+    return new Promise((resolve) => {
+        setTimeout(() => resolve('Fighting Corona'), 1000);
+    })
+}
+
+function execute() {
+    wearPPE().then(result => console.log(result));
+    fightCorona().then(result => console.log(result));
+}
+
+execute();
+
+</pre>
+</p>
+<h2>Result-1</h2>
+<p id="result-1"></p>
+<h2>Result-2</h2>
+<p id="result-2"></p>
+
+</body>
+</html>
